@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: rgb(116, 213, 186);
+    align-items: center;
+}
+
+.card{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(-50% , 50% );
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    left: 50%;
+}
+.mystyle{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(-50% , 50% );
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    left: 50%;
+}
+
+.image{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 100px;
+    transform: translate(-20% , 20% );
+    left: 10%;
+}
+.head{
+    position: absolute;
+    height: 30px;
+    width: 230px;
+    border-radius: 100px;
+    left: 38%;
+    top: 15%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.text1{
+    position: absolute;
+    height: 12px;
+    width: 220px;
+    border-radius: 100px;
+    left: 39%;
+    top: 30%;
+    font-weight: 900;
+}
+.text2{
+    position: absolute;
+    height: 12px;
+    width: 120px;
+    border-radius: 100px;
+    left: 39%;
+    top: 39%;
+}
+.text3{
+    position: absolute;
+    height: 12px;
+    width: 180px;
+    border-radius: 100px;
+    left: 39%;
+    top: 48%;
+    font-weight: 700;
+}
+.btn1{
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    left: 6%;
+    top: 73%;
+    border: 0px;
+}
+
+.btn2{
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    left: 53%;
+    top: 73%;
+    border: 0px;
+}
+.card *{
+    background: linear-gradient(
+        to right,
+        #e9e5e5,
+        #d0d0d0,
+        #e9e5e5
+    );
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load 1s infinite;
+    
+}
+
+@keyframes load{
+    100%{
+        background-position: -100% 0;
+    }
+}

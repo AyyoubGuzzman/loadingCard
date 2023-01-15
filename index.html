@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="image"></div>
+        <div class="head"></div>
+        <p class="text1"></p>
+        <p class="text2"></p>
+        <p class="text3"></p>
+        <button class="btn1"></button>
+        <button class="btn2"></button>
+    </div>
+
+    <script>
+        var user = {
+            name : "Ayyoub Fadel",
+            desc : " a full-stack developer from Morocco, 21 years old study in  NTIC Hay Riad ."
+        }
+
+
+
+        function fetchData(){
+            const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML=css; 
+            var card = document.querySelector('.card')
+            var img =  document.querySelector('.image')
+            var head =  document.querySelector('.head')
+            var desc =  document.querySelector('.text1')
+            var b1 =  document.querySelector('.btn1')
+            var b2 =  document.querySelector('.btn2')
+
+            img.innerHTML = "<img style='border-radius : 100px' src='https://picsum.photos/130/130' />";
+            head.innerHTML = user.name;
+            desc.innerHTML = user.desc;
+            b1.innerHTML = "More Info"
+            b2.innerHTML = "Consulte"
+
+            
+            card.classList.remove('card')
+            card.classList.add("mystyle");
+
+            
+            addCSS(".btn1{ background-color:red; color: white; font-weight:700; } .head{font-weight : 500;} .btn2{ background-color:rgb(2, 222, 101); color: white; font-weight:700; } .text1{top : 23%; left : 40%} .head{left: 40%; top: 12%} ")
+        }
+
+        setTimeout(()=>{
+            fetchData();
+        }, 4000)
+
+        
+    </script>
+</body>
+</html>
